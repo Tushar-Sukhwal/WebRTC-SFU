@@ -19,7 +19,7 @@ const server = createServer(app);
 // Middleware
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "https://t3001.tusharsukhwal.com",
+    origin: "*",
     credentials: true,
   })
 );
@@ -99,7 +99,7 @@ server.listen(PORT, () => {
   console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
   console.log(
     `Frontend URL: ${
-      process.env.FRONTEND_URL || "https://t3001.tusharsukhwal.com"
+      process.env.FRONTEND_URL || "https://meet.tusharsukhwal.com"
     }`
   );
 });
