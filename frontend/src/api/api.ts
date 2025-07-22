@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://t3000.tusharsukhwal.com/api",
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
 });
 
 // Add auth token to requests
